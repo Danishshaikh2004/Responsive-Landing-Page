@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:url(https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+}
+.logo{
+   font-size: xx-large;
+    color: white;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 22px;
+    position: relative;
+}
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid lightgreen;
+    transition: 0.5s linear;
+}
+.menu a:hover:before{
+    width: 90%;
+}
+.register a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: lightgreen;
+    border-radius: 10px;
+}
+.register a:hover{
+    background: transparent;
+    border: 2px solid lightgreen;
+    color: white;
+}
+.section{
+    max-width: 850px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    text-align: center;
+}
+.section span{
+    letter-spacing: 5px;
+    font-size: xx-large;
+}
+.section a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    background: lightgreen;
+    border-radius: 10px;
+}
+.section a:hover{
+    background: transparent;
+    border: 3px solid lightgreen;
+}
+.section h1{
+    font-size: 3.8em;
+    color: white;
+}
+
+main{
+    height: auto;
+}
+.explore{
+    text-align: center;
+}
+.explore p{
+    font-size: xx-large;
+}
+.explore h1{
+    padding: 20px;
+    font-size: 3.0em;
+}
+.destination {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 450px; /* Adjust as necessary */
+    height: 300px; /* Adjust as necessary */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.image-container .overlay h1 {
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+}
+.special{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.special img{
+    height: 350px;
+    width: 320px;
+}
+.special p{
+    font-size:xx-large;
+}
+.reviewsnrating {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.reviews {
+    height: 200px;
+    width: 420px;
+    border: 2px solid rgb(6, 6, 34);
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgb(40, 40, 43);
+    padding: 15px;
+}
+
+.reviews:hover {
+    box-shadow: 0 0 20px rgba(35, 23, 23, 0.7)
+}
+
+.head {
+    display: flex;
+    padding: 10px;
+}
+
+.reviews>h3 {
+    font-size: large;
+    padding: 5px;
+}
+
+.reviews h2 {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.reviews img {
+    height: 40px;
+    width: 30px;
+    border-radius: 19px;
+}
+
+.rate {
+    float: right;
+    bottom: 20px;
+}
+
+.queries {
+    display: flex;
+    justify-content:stretch;
+    align-items: center;
+}
+
+.queries img{
+    height: 450px;
+    width: 700px;
+    padding: 40px;
+    border-radius: 50px;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 8px;
+    margin-left: 0px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(20, 20, 26);
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Ensures padding and border are included in width */
+}
+.footer {
+    background-color: rgb(87, 161, 87);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftone {
+    padding: 20px;
+    width: 500px;
+    height: auto;
+    color: black;
+}
+
+.leftone p {
+    margin: 20px;
+    font-size: x-large;
+}
+
+.rightone {
+    padding: 20px;
+    width: 500px;
+    height: auto;
+    /* background-color: black; */
+    color: black;
+}
+
+.rone {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size:x-large;
+}
+
+.rightone img {
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 50%;
+    padding-right: 7px;
+}
+
+.foo {
+    background-color: rgb(87, 161, 87);
+    text-align: center;
+    padding: 5px;
+    font-size:x-large;
+    color: black;
+}
+
+hr {
+    border: 0;
+    /* Remove default border */
+    height: 1px;
+    /* Set the height of the line */
+    background-color: rgb(3, 50, 3);
+    /* Set the color of the line */
+    margin: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+@media screen and (max-width: 1200px) {
+    .section {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section {
+        max-width: 600px;
+    }
+
+    .special img {
+        width: 280px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        max-width: 500px;
+    }
+
+    .special {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .special img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        font-size: large;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+    .register a {
+        font-size: 16px;
+    }
+
+    .section {
+        max-width: 90%;
+    }
+
+    .special img {
+        max-width: 280px;
+    }
+
+    .leftone,
+    .rightone {
+        width: 90%;
+        max-width: 100%;
+    }
+}
